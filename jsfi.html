@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default browser styles */
+body, h1, h2, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section {
+    padding: 60px 20px;
+    margin-top: 50px;
+}
+
+.home, .about, .progress, .contact, .portfolio {
+    text-align: center;
+}
+
+.progress-bar {
+    background: #f4f4f4;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 600px;
+    height: 20px;
+}
+
+.progress {
+    background: #4caf50;
+    color: #fff;
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.im1{
+    width: 100%;
+}
+.d1{
+    align-items: center;
+    text-align: center;
+    margin-top: -110px;
+}
+.about{
+    display: flex;
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services </a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+   
+   <img id="home" class="im1" src="https://images.pexels.com/photos/358319/pexels-photo-358319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+
+    <div class="d1">
+        <h1>SA</h1>
+        <h3>AN IT COMPANY</h3>
+    </div>
+    <br><br>
+   <div id="about" style="text-align: center;" >
+        <h1  >ABOUT US </h1>
+        <!-- <h4>We Provide</h4> -->
+         <br><br>
+
+   </div>
+<div class="about">
+    
+    <img style="width: 50%;" src="https://images.pexels.com/photos/125532/pexels-photo-125532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <div>
+    <h2>ABOUT US</h2>
+    
+    
+    <p>At [Company Name], we are dedicated to transforming ideas into innovative technology solutions. Founded in [Year], our mission is to empower businesses through cutting-edge software, robust IT infrastructure, and tailored digital strategies.</p>
+    <br><br><br><h2>Our Approach</h2>
+<p>We believe in a client-centric approach, prioritizing collaboration and transparency throughout the project lifecycle. From initial consultation to deployment and ongoing support, we work closely with our clients to understand their challenges and deliver tailored solutions that align with their goals.</p>
+
+
+</div>
+</div>
+<br><br>
+<div id="services" style="text-align: center;" >
+    <h1>SERVICES </h1>
+    <h4>We Provide</h4>
+     <br><br>
+
+</div>
+
+<div style="justify-content: center;display: flex;">
+    <div style="height: 200px;width: 300px;border: 2px solid black;text-align: center;padding: 20px;margin-left: 20px;border-radius: 20px;" >
+        <h2>UI/UX/ Designer</h2><br>
+        <p>
+            We offer innovative UI & UX design services at Intellectsoft, aimed at delivering an excellent finished product in a timely manner.
+        </p>
+    </div>
+    <div style="height: 200px;width: 300px;border: 2px solid black;text-align: center;padding: 20px;margin-left: 20px;border-radius: 20px;" >
+        <h2>Website Designer</h2><br>
+        <p>
+            We plan, ideate, create, and build websites and web pages, many of which combine a number of visual elements including text, and video clips.
+        </p>
+    </div>
+    <div style="height: 200px;width: 300px;border: 2px solid black;text-align: center;padding: 20px;margin-left: 20px;border-radius: 20px;" >
+        <h2>Digital Animator</h2><br>
+        <p>
+            We use computers and other tools to create moving illustrations for films, video games or commercials.
+        </p>
+    </div>
+</div>
+<br><br>
+
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script >
+
+        // JavaScript can be used for additional interactive features if needed.
+// Currently, there's no specific functionality required, but you might want to add smooth scrolling or form validation.
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Example of smooth scrolling to sections
+    const links = document.querySelectorAll('nav a');
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
